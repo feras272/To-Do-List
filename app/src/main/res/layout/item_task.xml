@@ -9,9 +9,9 @@
         android:id="@+id/check_box_completed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="0dp"
-        android:minHeight="0dp"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:minWidth="48dp"
+        android:minHeight="48dp" />
 
     <TextView
         android:id="@+id/text_view_name"
@@ -28,7 +28,7 @@
         android:layout_toEndOf="@id/check_box_completed"/>
 
     <!-- Optional : making max line to one -->
-    
+
     <ImageView
         android:id="@+id/label_priority"
         android:layout_width="wrap_content"
