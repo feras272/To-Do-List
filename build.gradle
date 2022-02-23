@@ -25,13 +25,28 @@ buildscript {
         roomVersion = "2.2.5"
         testExtJunitVersion = "1.1.2"
     }
+
+//    repositories {
+//        google()
+//        jcenter()
+//    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradleVersion"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
+    }
 }
+
 
 plugins {
     id 'com.android.application' version '7.1.1' apply false
     id 'com.android.library' version '7.1.1' apply false
     id 'org.jetbrains.kotlin.android' version '1.5.30' apply false
 }
+
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir
