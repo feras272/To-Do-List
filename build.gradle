@@ -37,7 +37,11 @@ buildscript {
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
     }
+
 }
+
+
+
 
 
 plugins {
@@ -46,6 +50,12 @@ plugins {
     id 'org.jetbrains.kotlin.android' version '1.5.30' apply false
 }
 
+//allprojects {
+//    repositories {
+//        google()
+//        jcenter()
+//    }
+//}
 
 
 task clean(type: Delete) {
